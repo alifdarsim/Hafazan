@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .word-normal {
+        @apply text-4xl rounded hover:bg-teal-50 hover:text-teal-700 dark:hover:bg-teal-900 dark:hover:text-teal-400 text-slate-800 dark:text-slate-300;
+    }
+
+    .word-highlight {
+        @apply rounded-lg bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-400;
+    }
+
+    .verse-highlight{
+        @apply bg-teal-200 border border-black shadow-lg text-gray-600;
+    }
+
+    .dark .verse-highlight{
+        @apply bg-cyan-950 border border-teal-400 shadow-lg;
+    }
+
+
+}

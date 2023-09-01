@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'UthmanicScript18';
+    src: url('/assets/fonts/UthmanicHafs1Ver18.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'hafs';
+    src: url('/assets/fonts/hafs.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'surahnames';
+    src: url('/assets/fonts/sura_names.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'ProximaVara';
+    src: url('/assets/fonts/ProximaVara.ttf') format('truetype');
+}
+
+.surahname span {
+    font-family: 'surahnames', 'ProximaVara', serif !important;
+}
+
+body {
+    font-family: 'hafs', 'ProximaVara', serif !important;
+}
+
+body {
+    font-family: 'UthmanicScript18', 'ProximaVara', serif !important;
+}
+
+.text-container {
+    direction: rtl;
+    text-align: right;
+}
+
+:root {
+    --main-font-size: 16px;
+    --main-padding-left: 0px;
+    --main-padding-right: 0px;
+    --main-padding-top: 0px;
+    --main-padding-bottom: 0px;
+}
+
+.words {
+    font-size: var(--main-font-size);
+
+}
+
+.word-holder{
+    padding-left: var(--main-padding-left);
+    padding-right: var(--main-padding-right);
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+}
