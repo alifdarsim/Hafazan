@@ -20,6 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', [DashboardController::class, 'Dashboard'])->name('dashboard');
-
 Route::get('/chapter', [QuranController::class, 'Chapter'])->name('chapter');
 Route::get('/chapter/{id}', [QuranController::class, 'ChapterById'])->name('chapter.id');
