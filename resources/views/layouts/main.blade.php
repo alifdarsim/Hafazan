@@ -11,6 +11,7 @@
     <title>Hafazan by Suzen Pax</title>
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/font.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.0.0/animate.min.css" rel="stylesheet">
     <script src="{{ asset('assets/js/app.js') }}" defer></script>
     @vite([
     'resources/css/app.css',

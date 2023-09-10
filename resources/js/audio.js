@@ -36,7 +36,10 @@ const audio = {
     },
 
     // pause audio
-    pause: () => _audio.pause(),
+    pause: () => {
+        _audio.pause();
+        audioPlayer.setAudioPlayerToPause();
+    },
     // check if audio is paused
     isPaused: () => _audio.paused,
 
@@ -45,7 +48,7 @@ const audio = {
         console.log("audio is start");
         clearTimeout(audioTimer);
         // _audio.changeAudioPlayButton("play");
-        // _audio.showPlayer();
+        audioPlayer.showPlayer();
         if (start !== null) _audio.currentTime = start / 1000;
         if (end !== null) {
             audioTimer = setTimeout(() => {

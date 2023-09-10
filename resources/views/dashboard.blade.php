@@ -96,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 gap-y-4 pb-3 sm:grid-cols-3">
+                <div class="grid grid-cols-1 gap-y-4 pb-3">
                     <div class="scrollbar-sm mt-5 flex space-x-4 overflow-x-auto px-4 sm:px-5 lg:mt-0 lg:pl-0">
                         @foreach($chapters as $chapter)
                             <div class="flex w-36 shrink-0 flex-col items-center">

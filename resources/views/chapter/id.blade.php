@@ -28,8 +28,8 @@
 
 @push('scripts')
     <script>
-        // declare global variable for chapter id
+        // declare global variable for surah id
         window.chapter = {{$id}};
     </script>
-    <script type="module" src="{{ Vite::asset('resources/js/view/chapter/id.js') }}"></script>
+    <script type="module" src="{{ Vite::asset('resources/js/view/surah/id.js') }}"></script>
 @endpush

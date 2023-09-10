@@ -1,4 +1,4 @@
-<a href="{{route('chapter.id', ["id" => $index])}}" class="group">
+<a href="{{route('surah.id', ["id" => $index])}}" class="group">
     <div class="px-4 py-3 card hover:bg-teal-100 dark:hover:bg-teal-900">
         <div class="flex justify-between">
             <div class="flex justify-normal items-center">

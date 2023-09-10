@@ -64,7 +64,7 @@
 
     if (previousSurah) {
         previousSurah.addEventListener("click", () => {
-            window.location.href = `{{route('chapter.id', ["id" => $index - 1])}}`;
+            window.location.href = `{{ route('surah.id', ["id" => $index - 1]) }}`;
         });
     }
 
@@ -76,7 +76,7 @@
 
     if (nextSurah) {
         nextSurah.addEventListener("click", () => {
-            window.location.href = `{{route('chapter.id', ["id" => $index + 1])}}`;
+            window.location.href = `{{ route('surah.id', ["id" => $index + 1]) }}`;
         });
     }
 </script>

@@ -9,13 +9,13 @@ use Illuminate\View\Component;
 class VerseContainer extends Component
 {
 
-
     /**
      * Create a new component instance.
      */
     public function __construct(
         public string $key,
-        public string $index
+        public string $index,
+        public string $surah
     )
     {}
 

@@ -11,13 +11,20 @@
         @apply rounded-lg bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-400;
     }
 
-    .verse-highlight{
+    .verse-highlight {
         @apply bg-teal-200 border border-black shadow-lg text-gray-600;
     }
 
-    .dark .verse-highlight{
+    .dark .verse-highlight {
         @apply bg-cyan-950 border border-teal-400 shadow-lg;
     }
 
+}
 
+.swal2-popup .swal2-styled:focus{
+    box-shadow: none !important;
+}
+
+.swal2-actions > button {
+    font-size: 0.8em !important;
 }

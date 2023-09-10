@@ -57,7 +57,6 @@ const menu = {
         highlightWordButton.checked = localStorage.getItem("highlightWord") === "true";
         scrollToVerseButton.checked = localStorage.getItem("scrollToVerse") === "true";
 
-        console.log(highlightVerseButton.checked, highlightWordButton.checked, scrollToVerseButton.checked)
         // set verse option
         verse.setIsVerseScroll(localStorage.getItem('scrollToVerse'));
         verse.setIsVerseHighlighted(localStorage.getItem('highlightVerse'));

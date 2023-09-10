@@ -11,7 +11,6 @@ const player = {
     // set click event for play button
     init: function (reciterId, chapter) {
         // get a translator list from api
-        console.log("player init")
         audio.setAudioInfo(reciterId, chapter).then(r => {
             player.setPlayButton();
             player.setCloseButton();
@@ -109,7 +108,6 @@ const player = {
         let scrollToVerse = localStorage.getItem('scrollToVerse') === 'true';
         let highlightVerse = localStorage.getItem('highlightVerse') === 'true';
         let highlightWord = localStorage.getItem('highlightWord') === 'true';
-        console.log(scrollToVerse, highlightVerse, highlightWord)
     }
 }
 

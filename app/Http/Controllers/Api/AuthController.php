@@ -1,15 +1,17 @@
 <?php
 
-namespace App\Http\Controllers;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+namespace App\Http\Controllers\Api;
+
+use App\Http\Controllers\Controller;
 use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+
 
 class AuthController extends Controller
 {
     /**
-     * Create a new AuthController instance.
+     * Create a new JwtAuthController instance.
      *
      * @return void
      */
@@ -32,7 +34,9 @@ class AuthController extends Controller
         if (! $token = auth()->attempt($validator->validated())) {
             return response()->json(['error' => 'Unauthorized'], 401);
         }
-        return $this->createNewToken($token);
+        //set cookie for 1 day with secure and httponly
+        $cookie = cookie('jwt_token', $token, 60 * 24 * 7, null, null, false, false);
+        return $this->createNewToken($token)->withCookie($cookie);
     }
     /**
      * Register a User.
@@ -86,16 +90,16 @@ class AuthController extends Controller
     /**
      * Get the token array structure.
      *
-     * @param  string $token
+     * @param string $token
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    protected function createNewToken($token){
+    protected function createNewToken(string $token){
         return response()->json([
+            'status' => 'success',
             'access_token' => $token,
             'token_type' => 'bearer',
-            'expires_in' => auth()->factory()->getTTL() * 60,
-            'user' => auth()->user()
+            'expires_in' => auth()->factory()->getTTL(),
         ]);
     }
 }
