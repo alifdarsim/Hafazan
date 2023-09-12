@@ -1,0 +1,116 @@
+{
+  "_axios-4a70c6fc.js": {
+    "file": "assets/axios-4a70c6fc.js"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-c3a5bf1f.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/audio.js": {
+    "file": "assets/audio-abe3fda1.js",
+    "imports": [
+      "_axios-4a70c6fc.js",
+      "resources/js/components/verse.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/audio.js"
+  },
+  "resources/js/axiosWrapper.js": {
+    "file": "assets/axiosWrapper-ce9fae6d.js",
+    "imports": [
+      "_axios-4a70c6fc.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/axiosWrapper.js"
+  },
+  "resources/js/components.css": {
+    "file": "assets/components-a461d729.css",
+    "src": "resources/js/components.css"
+  },
+  "resources/js/components.js": {
+    "css": [
+      "assets/components-a461d729.css"
+    ],
+    "file": "assets/components-351c615f.js",
+    "isEntry": true,
+    "src": "resources/js/components.js"
+  },
+  "resources/js/components/audioPlayer/menu.js": {
+    "file": "assets/menu-28f2bc84.js",
+    "imports": [
+      "resources/js/components/verse.js",
+      "_axios-4a70c6fc.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/components/audioPlayer/menu.js"
+  },
+  "resources/js/components/audioPlayer/player.js": {
+    "file": "assets/player-1896e8e6.js",
+    "imports": [
+      "resources/js/components/verse.js",
+      "_axios-4a70c6fc.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/components/audioPlayer/player.js"
+  },
+  "resources/js/components/rightSideBar.js": {
+    "file": "assets/rightSideBar-e4528f19.js",
+    "imports": [
+      "resources/js/translation.js",
+      "_axios-4a70c6fc.js",
+      "resources/js/components/verse.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/components/rightSideBar.js"
+  },
+  "resources/js/components/verse.js": {
+    "file": "assets/verse-9512725d.js",
+    "imports": [
+      "_axios-4a70c6fc.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/components/verse.js"
+  },
+  "resources/js/translation.js": {
+    "file": "assets/translation-e6280241.js",
+    "imports": [
+      "_axios-4a70c6fc.js",
+      "resources/js/components/verse.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/translation.js"
+  },
+  "resources/js/view/history/index.js": {
+    "file": "assets/index-a0606949.js",
+    "imports": [
+      "resources/js/axiosWrapper.js",
+      "resources/js/components.js",
+      "_axios-4a70c6fc.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/view/history/index.js"
+  },
+  "resources/js/view/surah/id.js": {
+    "file": "assets/id-9272a930.js",
+    "imports": [
+      "resources/js/components/verse.js",
+      "resources/js/components/rightSideBar.js",
+      "resources/js/components/audioPlayer/menu.js",
+      "_axios-4a70c6fc.js",
+      "resources/js/translation.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/view/surah/id.js"
+  },
+  "resources/js/view/surah/progress.js": {
+    "file": "assets/progress-8898d087.js",
+    "imports": [
+      "resources/js/components.js",
+      "resources/js/axiosWrapper.js",
+      "_axios-4a70c6fc.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/view/surah/progress.js"
+  }
+}
